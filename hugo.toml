@@ -1,4 +1,4 @@
 baseURL = 'https://The-Old-Cat.github.io'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Записки Старого Кота'
 theme = 'ananke'
