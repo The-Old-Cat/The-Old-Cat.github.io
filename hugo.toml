@@ -1,6 +1,6 @@
 baseURL = 'https://The-Old-Cat.github.io'
 languageCode = 'ru-RU'
-title = 'My New Hugo Site'
+title = 'Заметки обо всем'
 theme = 'TheOldCatTheme'
 
 [[menus.main]]
