@@ -1,24 +1,24 @@
-baseURL = 'https://The-Old-Cat.github.io'
-languageCode = 'ru-RU'
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
 title = 'My New Hugo Site'
 theme = 'TheOldCatTheme'
 
 [[menus.main]]
-name = 'Главная'
+name = 'Home'
 pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Статьи'
+name = 'Posts'
 pageRef = '/posts'
 weight = 20
 
 [[menus.main]]
-name = 'Тэги'
+name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
 [module]
   [module.hugoVersion]
-    extended = true
+    extended = false
     min = "0.116.0"
