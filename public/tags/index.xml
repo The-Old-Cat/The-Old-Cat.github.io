@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Записки старого кота</title>
+    <title>Tags on Notes from an old cat</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Записки старого кота</description>
+    <description>Recent content in Tags on Notes from an old cat</description>
     <generator>Hugo</generator>
     <language>ru-RU</language>
     <lastBuildDate>Wed, 12 Apr 2017 11:14:48 -0400</lastBuildDate>
