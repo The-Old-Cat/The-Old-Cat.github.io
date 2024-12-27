@@ -50,21 +50,27 @@ recent_posts_number = 3
 [params.ananke.social.share]
 networks = [
   "email",
-  "facebook",
-  "bluesky",
-  "linkedin"
+  "pinterest"
 ]
 
 [params.ananke.social.follow]
 networks = [
-  "facebook",
-  "bluesky",
-  "linkedin"
+  "pinterest",
+  "telegram",
+  "github"
 ]
 
-[params.ananke.social.facebook]
-username = "patrick.kollitsch"
-# profilelink = "https://www.facebook.com/patrick.kollitsch"
+[params.ananke.social.pinterest]
+username = "artkov476"
+profilelink = "https://ru.pinterest.com/artkov476/"
+
+[params.ananke.social.github]
+username = "github"
+profilelink = "https://github.com/The-Old-Cat/For-GitHub-Pages"
+
+[params.ananke.social.telegram]
+username = "Art_Kovale"
+profilelink = "https://t.me/Art_Kovale"
 
 [params.ananke.social.linkedin]
 username = "patrickkollitsch"

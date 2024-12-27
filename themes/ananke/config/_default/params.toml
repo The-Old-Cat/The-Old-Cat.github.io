@@ -132,7 +132,7 @@ link = "https://pinterest.com/pin/create/button/"
 [ananke.social.networks.particles]
 url = "permalink"
 media = "permalink"
-description = "description"
+description = "summary"
 
 [[ananke.social.networks]]
 slug = "reddit"
