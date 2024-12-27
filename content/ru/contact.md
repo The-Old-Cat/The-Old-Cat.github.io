@@ -4,6 +4,7 @@ featured_image: ''
 omit_header_text: true
 description: Оставьте нам сообщение!
 type: page
+featured_image: '/img/notebook.jpg'
 menu: main
 
 ---

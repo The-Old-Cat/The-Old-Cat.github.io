@@ -3,9 +3,9 @@ title: contact
 featured_image: ''
 omit_header_text: true
 description: We'd love to hear from you
+featured_image: '/img/notebook.jpg'
 type: page
 menu: main
-
 ---
 
 
