@@ -1,5 +1,5 @@
 {{ define "header" }}
-   {{/* We can override any block in the baseof file be defining it in the template */}}
+   
   {{ partial "page-header.html" . }}
 {{ end }}
 
@@ -8,10 +8,7 @@
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <header class="mt4 w-100">
       <aside class="instapaper_ignoref b helvetica tracked ttu">
-          {{/*
-          CurrentSection allows us to use the section title instead of inferring from the folder.
-          https://gohugo.io/variables/page/#section-variables-and-methods
-          */}}
+         
         {{ .CurrentSection.Title }}
       </aside>
       {{- partialCached "social/share.html" . . -}}
@@ -29,10 +26,10 @@
         </strong>
       </p>
       {{ end }}
-      {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
+     
       {{ if not .Date.IsZero }}
       <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
-        {{- .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) -}}
+        {{- .Date | time.Format (default "2 January, 2006" .Site.Params.date_format) -}}
       </time>
       {{end}}
 

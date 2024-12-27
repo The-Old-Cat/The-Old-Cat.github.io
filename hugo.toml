@@ -17,7 +17,7 @@ pagerSize = 3 # this is set low for demonstrating with dummy content. Set to a h
 contentDir = "content/ru"
 languageCode = 'ru-RU'
 weight = 1
-title = "Notes from an old cat"
+title = "Записки старого кота"
 
 [languages.en]
 contentDir = "content/en"
