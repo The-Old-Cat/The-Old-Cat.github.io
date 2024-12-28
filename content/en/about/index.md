@@ -1,11 +1,17 @@
 ---
 title: "about"
-description: "A few years ago, while visiting or, rather, rummaging about Notre-Dame, the author of this book found, in an obscure nook of one of the towers, the following word, engraved by hand upon the wall: —ANANKE."
-featured_image: '/images/Victor_Hugo-Hunchback.jpg'
+description: "My name is Tom, also known as Old Cat, and this blog is my cozy space where technology, psychology, and creativity intersect. Here I share my discoveries in the world of IT, reflect on how digital technologies affect us, experiment with image processing, and talk about the books that inspire me."
+featured_image: '/images/Garden.jpg'
 menu:
   main:
     weight: 1
 ---
-{{< figure src="/images/Victor_Hugo-Hunchback.jpg" title="Illustration from Victor Hugo et son temps (1881)" >}}
+{{< figure src="/images/Garden_2.jpg"  >}}
 
-_The Hunchback of Notre-Dame_ (French: _Notre-Dame de Paris_) is a French Romantic/Gothic novel by Victor Hugo, published in 1831. The original French title refers to Notre Dame Cathedral, on which the story is centered. English translator Frederic Shoberl named the novel The Hunchback of Notre Dame in 1833 because at the time, Gothic novels were more popular than Romance novels in England. The story is set in Paris, France in the Late Middle Ages, during the reign of Louis XI.
+The IT industry plays a significant role in my interests, and I strive to cover current trends and provide practical advice. However, my main goal is to explore the connection between technology and our inner selves, showing how they can enrich our lives.
+
+Image processing is another aspect of my creative work. You can check out my creations and learn about the tools and techniques I use to create unique visual solutions.
+
+I also enjoy sharing my impressions from the books I've read. This section of the blog is dedicated to literature that helps me find inspiration and better understand the world around me.
+
+This blog is for those who seek peace amidst the noise of the information age, aspire to gain new knowledge, and want to discover sources of inspiration. Welcome to my digital garden!
