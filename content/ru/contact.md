@@ -15,9 +15,9 @@ _Откройте дверь в цифровой сад_
 Если у вас есть вопросы, идеи для сотрудничества или просто хотите обсудить интересные темы — пишите.  
 {{< form-contact-ru >}}
 **💬 Социальные сети:**  
-- **Telegram:** [@assistant_Old_Cat_bot](https://t.me/assistant_Old_Cat_bot)  
+
+- **Telegram:** [@assistant_Old_Cat_bot](https://t.me/assistant_Old_Cat_bot)
 - **GitHub:** [The-Old-Cat](https://github.com/The-Old-Cat)  
-- **LinkedIn:** [OldCatLinkedIn](#)  
 
 💡 Обратная связь:
 
