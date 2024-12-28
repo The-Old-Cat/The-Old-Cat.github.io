@@ -8,7 +8,19 @@ type: page
 menu: main
 ---
 
+**Contact the Old Cat**  
+_Open the door to the digital garden_  
 
-This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the shortcode to make it work.
+**📬 Mail:**  
+If you have questions, ideas for cooperation, or just want to discuss interesting topics, write.  
+{{< form-contact-en >}}
+**💬 Social media:**  
 
-{{< form-contact-en  >}}
+- **Telegram:** [@assistant_Old_Cat_bot](https://t.me/assistant_Old_Cat_bot)
+- **GitHub:** [The-Old-Cat](https://github.com/The-Old-Cat)  
+
+💡 Feedback:
+
+I will be glad to see your suggestions and feedback. Together we will make this digital garden even better!
+
+Best regards, Old Cat.
