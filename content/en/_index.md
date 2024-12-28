@@ -1,10 +1,11 @@
 ---
-title: "Ananke: a Hugo Theme"
+title: "Digital Garden: Where Technology, Images, and Meaning Intertwine"
 
-description: "The last theme you'll ever need. Maybe."
+description: "Technology, psychology and art in the soft paws of time"
 # 1. To ensure Netlify triggers a build on our exampleSite instance, we need to change a file in the exampleSite directory.
 theme_version: '2.8.2'
 cascade:
-  featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+  featured_image: '/img/bg_home.webp'
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
+
+Welcome to my digital garden – a space where technology meets human nature. Here, I share my discoveries in IT, reflections on psychology, experiments in image processing, and impressions from books. This is a place for those seeking inspiration, new knowledge, and a bit of quiet in the noise of the digital world.
