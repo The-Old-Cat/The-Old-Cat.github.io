@@ -1,3 +1,3 @@
 +++
-author = "The Old Cat"
+author = "Старый Кот"
 +++
