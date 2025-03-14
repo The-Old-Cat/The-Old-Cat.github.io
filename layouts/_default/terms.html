@@ -22,7 +22,7 @@
                         <h2 class="card-title" id="{{ $key | urlize }}">{{ $value.Page.Title }}</h2>
                         <ul>
                             {{ range $value.Pages.ByDate.Reverse }}
-                                <li><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></li>
+                                <li><a href="{{ .RelPermalink }}" title="{{i18n .Title }}">{{ .Title }}</a></li>
                             {{ end}}
                         </ul>
                     </div>
