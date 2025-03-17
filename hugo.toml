@@ -121,12 +121,12 @@ theme="materialize-bp-hugo-theme"
         name = 'Посты'
         pageRef = '/post'
         weight = 10
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-book'></i>"
       [[languages.ru.menus.main]]
         name = 'Категории'
         pageRef = '/categories'
         weight = 20
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-list'></i>"
         [[languages.ru.menus.footer]]
         name = 'Обо мне'
         pageRef = '/about'
@@ -136,12 +136,12 @@ theme="materialize-bp-hugo-theme"
         name = 'Категории'
         pageRef = '/categories'
         weight = 20
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-list'></i>"
         [[languages.ru.menus.footer]]
         name = 'Теги'
         pageRef = '/tags'
         weight = 20
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-sticky-note'></i>"
     [languages.ru.params]
   [languages.en]
     contentDir = "content/en"
@@ -158,12 +158,12 @@ theme="materialize-bp-hugo-theme"
         name = 'Posts'
         pageRef = '/post'
         weight = 10
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-book'></i>"
       [[languages.en.menus.main]]
         name = 'Categories'
         pageRef = '/categories'
         weight = 20
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-list'></i>"
         [[languages.en.menus.footer]]
         name = 'About'
         pageRef = '/about'
@@ -173,12 +173,12 @@ theme="materialize-bp-hugo-theme"
         name = 'Categories'
         pageRef = '/categories'
         weight = 20
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-list'></i>"
         [[languages.en.menus.footer]]
         name = 'Tags'
         pageRef = '/tags'
         weight = 20
-        pre = "<i class='fas fa-folder'></i>"
+        pre = "<i class='fas fa-sticky-note'></i>"
     [languages.en.params]
 
 
