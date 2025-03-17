@@ -1,9 +1,9 @@
-baseURL = "https://gohugo.io/"
-title = "Hugo Themes"
-# author = "Steve Francia"
-# copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
-languageCode = "en"
-DefaultContentLanguage = "en"
+baseURL = "https://The-Old-Cat.github.io"
+title = "Лаборатория Старого кота: Идеи, Образы, Технологии"
+# author = "Старый Кот"
+# copyright = "Copyright © 2008–2019, Старый Кот and the Hugo Authors; all rights reserved."
+languageCode = "ru"
+DefaultContentLanguage = "ru"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
@@ -12,7 +12,7 @@ ignoreErrors = ["error-remote-getjson"]
 footnoteReturnLinkContents = "^"
 
 # Theme specific examples
-copyright = "Sebastian Pech"
+copyright = "Старый Кот"
 enableRobotsTXT = true
 pygmentsCodeFences = true
 canonifyurls = true
@@ -33,31 +33,34 @@ theme="materialize-bp-hugo-theme"
     page = "/:slug/"
 
 [params]
-  description = "Text about the site"
-  #images = ["logo.jpg"]
-   showPostSummary = true
-  # startPageColumns = true
+  description = "Технологии, психология и искусство в мягких лапах времени"
+  en.description = "Technology, psychology and art in the soft paws of time"
+  images = ["AK.png"]
+  showPostSummary = true
+  #startPageColumns = true
   # showListsGrouped = true
-  # alwaysExpandMenu = true
+  alwaysExpandMenu = true
   customDateFormat = "02.01.2006"
   # hideReadingTime = true
-  #themeColor1 = "light-green" # main buttons and navbar
-  #themeColor1text = "light-green-text"
-  #themeColor2 = "red" # footer
-  #themeColor2text = "red-text text-lighten-3"
+  themeColor1 = "cyan darken-4" # main buttons and navbar
+  themeColor1text = "cyan-text text-darken-4"
+  themeColor2 = "cyan  darken-4" # footer
+  themeColor2text = "cyan-text text-darken-4"
   # Please adjust colors in /assets/css/custom.css file according to main.css from theme.
   # js=["/js/test_site.js"]
   # css=["/css/test_site.css"]
   # csscdn=["https://fonts.googleapis.com/css?family=Concert+One|Roboto&display=swap"]
-  [params.author]
-    name = "Sebastian Pech"
+
+  # [params.author]
+    # name = ""
+
 
   # Sets Social Media icons to appear and link to your account. Value should be your
   # username unless otherwise noted.
   # Code from https://themes.gohugo.io/future-imperfect/ theme
   [params.social]
     # Coding Communities
-    github           = "spech66"
+    github           = "The-Old-Cat"
     gitlab           = ""
     stackoverflow    = "" # User Number
     bitbucket        = ""
@@ -72,10 +75,10 @@ theme="materialize-bp-hugo-theme"
     wordpress        = ""
     medium           = ""
     # Professional/Business Oriented Communities
-    linkedin         = "sebastian-pech"
+    linkedin         = ""
     linkedin_company = ""
     foursquare       = ""
-    xing             = "Sebastian_Pech3"
+    xing             = ""
     slideshare       = ""
     # Social Networks
     facebook         = ""
@@ -88,11 +91,11 @@ theme="materialize-bp-hugo-theme"
     instagram        = ""
     tiktok           = "" # @username
     tumblr           = ""
-    twitter          = "spech84"
+    twitter          = ""
     skype            = ""
     snapchat         = ""
-    pinterest        = ""
-    telegram         = ""
+    pinterest        = "artkov476"
+    telegram         = "assistant_Old_Cat_bot"
     discord          = "" # invite link
     # Email
     email            = ""
@@ -102,48 +105,81 @@ theme="materialize-bp-hugo-theme"
     [markup.goldmark.renderer]
       unsafe = true
 
-#[languages]
-#  [languages.en]
-#    languageName = "English"
-#    title = "My blog"
-#    weight = 1
-#    [languages.en.params]
-#  [languages.de]
-#    languageName = "Deutsch"
-#    title = "Mein Blog"
-#    weight = 2
-#    [languages.de.params]
-
-[menu]
-
-  [[menu.main]]
-    identifier = "about"
-    # name = "About"  # Material Icons are displayed as block so use the icon only
-    url = "/about/"
-    weight = 10
-    pre = "<i class='material-icons'>speaker_notes</i>" # Material Icons
-    # pre = "<i class='fas fa-heart'></i>" # FontAwesone has more love ;-)
-
-  [[menu.footer]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-    pre = "<i class='fas fa-address-card'></i>"
-
-  [[menu.footer]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 20
-    pre = "<i class='fas fa-folder'></i>"
-
-  [[menu.footer]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 30
-    pre = "<i class='fas fa-tags'></i>"
+[languages]
+  [languages.ru]
+    contentDir = "content/ru"
+    languageName = "Русский"
+    title = "Лаборатория Старого кота: Идеи, Образы, Технологии"
+    weight = 1
+  [languages.ru.menus]
+      [[languages.ru.menus.main]]
+        name = 'Обо мне'
+        pageRef = '/about'
+        weight = 10
+        pre = "<i class='fas fa-address-card'></i>"
+      [[languages.ru.menus.main]]
+        name = 'Посты'
+        pageRef = '/post'
+        weight = 10
+        pre = "<i class='fas fa-book'></i>"
+      [[languages.ru.menus.main]]
+        name = 'Категории'
+        pageRef = '/categories'
+        weight = 20
+        pre = "<i class='fas fa-list'></i>"
+        [[languages.ru.menus.footer]]
+        name = 'Обо мне'
+        pageRef = '/about'
+        weight = 10
+        pre = "<i class='fas fa-address-card'></i>"
+      [[languages.ru.menus.footer]]
+        name = 'Категории'
+        pageRef = '/categories'
+        weight = 20
+        pre = "<i class='fas fa-list'></i>"
+        [[languages.ru.menus.footer]]
+        name = 'Теги'
+        pageRef = '/tags'
+        weight = 20
+        pre = "<i class='fas fa-sticky-note'></i>"
+    [languages.ru.params]
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    title = "The laboratory of the Old Cat: Ideas, Images, Technologies"
+    weight = 2
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = 'About'
+        pageRef = '/about'
+        weight = 10
+        pre = "<i class='fas fa-address-card'></i>"
+      [[languages.en.menus.main]]
+        name = 'Posts'
+        pageRef = '/post'
+        weight = 10
+        pre = "<i class='fas fa-book'></i>"
+      [[languages.en.menus.main]]
+        name = 'Categories'
+        pageRef = '/categories'
+        weight = 20
+        pre = "<i class='fas fa-list'></i>"
+        [[languages.en.menus.footer]]
+        name = 'About'
+        pageRef = '/about'
+        weight = 10
+        pre = "<i class='fas fa-address-card'></i>"
+      [[languages.en.menus.footer]]
+        name = 'Categories'
+        pageRef = '/categories'
+        weight = 20
+        pre = "<i class='fas fa-list'></i>"
+        [[languages.en.menus.footer]]
+        name = 'Tags'
+        pageRef = '/tags'
+        weight = 20
+        pre = "<i class='fas fa-sticky-note'></i>"
+    [languages.en.params]
 
 
 [taxonomies]
