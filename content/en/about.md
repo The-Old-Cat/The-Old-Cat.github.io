@@ -1,15 +1,15 @@
 +++
-title = "Обо мне"
-description = "Меня зовут Том, по прозвищу Старый Кот и этот блог — мое уютное пространство"
+title = "About me"
+description = "My name is Tom, nicknamed the Old Cat, and this blog is my cozy space."
 date = "2024-12-28"
 aliases = ["about-us", "about-hugo", "contact"]
-author = "Старый Кот"
+author = "The Old Cat"
 +++
 {{< figure src="/images/Garden_2.jpg" >}}
-IT-индустрия занимает важное место в моих интересах, и я стараюсь освещать актуальные тренды и давать практические советы. Но моя главная цель — исследовать связь между технологиями и нашей внутренней сущностью, показывая, как они могут обогащать нашу жизнь.
+The IT industry occupies an important place in my interests, and I try to highlight current trends and give practical advice. But my main goal is to explore the connection between technology and our inner selves, showing how it can enrich our lives.
 
-Обработка изображений — еще одно направление моего творчества. Вы можете ознакомиться с моими работами и узнать, какими инструментами и методами я пользуюсь для создания уникальных визуальных решений.
+Image processing is another area of my creativity. You can familiarize yourself with my work and find out what tools and methods I use to create unique visual solutions.
 
-Также я люблю делиться своими впечатлениями от прочитанных книг. Этот раздел блога посвящен литературе, которая помогает мне находить вдохновение и глубже понимать окружающий мир.
+I also like to share my impressions of the books I've read. This section of the blog is dedicated to literature, which helps me find inspiration and gain a deeper understanding of the world around me.
 
-Мой блог предназначен для тех, кто ищет спокойствие среди информационного шума, стремится к новым знаниям и хочет открыть для себя источники вдохновения. Добро пожаловать в мой цифровой сад!
+My blog is intended for those who seek peace in the midst of information noise, strive for new knowledge and want to discover sources of inspiration. Welcome to my digital garden!
