@@ -22,6 +22,7 @@ h1.card-title > a {
 a {
     color: #03a9f4; /* light-blue */
 }
+
 .pagination li.active {
     background-color: #ff9800; /* orange */
 }

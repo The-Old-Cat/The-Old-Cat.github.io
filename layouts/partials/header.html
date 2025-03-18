@@ -3,6 +3,7 @@
         <a id="logo-container" href="{{ "/" | relLangURL }}" class="brand-logo">{{ .Site.Title }}</a>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
+            
             {{ $currentPage := . }}
             {{ range $index, $element := .Site.Menus.main }}
                 {{ if .HasChildren }}
@@ -13,10 +14,12 @@
                 {{ else }}
                     <li><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
                 {{ end }}
-            {{ end }}
+            {{ end }} 
+            
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
+            
             {{ range $index, $element := .Site.Menus.main }}
                 {{ if .HasChildren }}
                     <li><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
@@ -28,5 +31,8 @@
                 {{ end }}
             {{ end }}
         </ul>
+        
     </div>
+    
 </nav>
+

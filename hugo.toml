@@ -108,7 +108,7 @@ theme="materialize-bp-hugo-theme"
 [languages]
   [languages.ru]
     contentDir = "content/ru"
-    languageName = "Русский"
+    languageName = "Ru"
     title = "Лаборатория Старого кота: Идеи, Образы, Технологии"
     weight = 1
   [languages.ru.menus]
@@ -145,7 +145,7 @@ theme="materialize-bp-hugo-theme"
     [languages.ru.params]
   [languages.en]
     contentDir = "content/en"
-    languageName = "English"
+    languageName = "En"
     title = "The laboratory of the Old Cat: Ideas, Images, Technologies"
     weight = 2
     [languages.en.menus]
