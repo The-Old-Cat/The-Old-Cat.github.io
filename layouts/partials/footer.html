@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div class="col l4 s12">
-                {{ partial "i18nlist_footer.html" . }}
+                {{ partial "i18nlist.html" . }}
                 <h5 class="white-text">{{ i18n "site" }}</h5>
                 <ul>
                     {{ range $index, $element := .Site.Menus.footer }}
