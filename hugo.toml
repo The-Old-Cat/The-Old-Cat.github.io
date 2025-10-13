@@ -179,7 +179,6 @@ theme="materialize-bp-hugo-theme"
         pre = "<i class='fas fa-sticky-note'></i>"
     [languages.en.params]
 
-
 [taxonomies]
 category = "categories"
 tag = "tags"
