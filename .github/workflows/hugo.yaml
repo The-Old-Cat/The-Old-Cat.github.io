@@ -1,18 +1,14 @@
 name: Deploy Hugo site to Yandex Object Storage
 
 on:
-  # Запускается автоматически при пуше в ветку main
   push:
     branches:
       - main
-  # Можно запустить вручную из интерфейса GitHub Actions
   workflow_dispatch:
 
-# Разрешения для работы с секретами
 permissions:
   contents: read
 
-# Одновременные запуски
 concurrency:
   group: "deploy-to-yandex"
   cancel-in-progress: false
@@ -29,32 +25,34 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
           sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      # 2. Checkout кода репозитория
+      # 2. Checkout кода
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 3. Сборка сайта с Hugo
+      # 3. Сборка сайта
       - name: Build with Hugo
         run: |
           hugo --minify
 
-      # 4. Установка AWS CLI для работы с Yandex Object Storage
-      - name: Install AWS CLI
+      # 4. Установка AWS CLI v2
+      - name: Install AWS CLI v2
         run: |
-          sudo apt-get update
-          sudo apt-get install -y awscli
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+          rm -rf awscliv2.zip aws
 
       # 5. Настройка AWS CLI для Yandex
       - name: Configure AWS CLI for Yandex
         run: |
           mkdir -p ~/.aws
           echo "[default]" > ~/.aws/credentials
-          echo "aws_access_key_id = ${{ secrets.YANDEX_ACCESS_KEY_ID }}" >> ~/.aws/credentials
-          echo "aws_secret_access_key = ${{ secrets.YANDEX_SECRET_ACCESS_KEY }}" >> ~/.aws/credentials
+          echo "aws_access_key_id = ${{ secrets.ACCESS_KEY_ID }}" >> ~/.aws/credentials
+          echo "aws_secret_access_key = ${{ secrets.SECRET_ACCESS_KEY }}" >> ~/.aws/credentials
 
       # 6. Деплой на Yandex Object Storage
       - name: Deploy to Yandex Object Storage
         run: |
-          aws --endpoint-url=https://storage.yandexcloud.net s3 sync ./public s3://${{ secrets.YANDEX_BUCKET }} --delete
+          aws --endpoint-url=https://storage.yandexcloud.net s3 sync ./public s3://${{ secrets.BUCKET }} --delete
