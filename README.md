@@ -27,3 +27,6 @@ hugo server -t YOURTHEME
 - An `about.md` that is intended to provide the `/about/` page for a theme demo
 
 6. If you intend to build a theme that does not fit in the content structure provided in this repository, then you are still more than welcome to submit it for review at the [Hugo Themes](https://github.com/gohugoio/hugoThemes/issues) repository
+
+
+test
