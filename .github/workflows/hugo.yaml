@@ -39,4 +39,5 @@ jobs:
                   secretAccessKey: ${{ secrets.SECRET_ACCESS_KEY }}
                   bucket: ${{ secrets.BUCKET }}
                   path: "./public"
+                  content-type: "auto"  # Автоматическое определение, но более устойчивое
                   clear: true
