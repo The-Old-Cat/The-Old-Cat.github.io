@@ -1,0 +1,47 @@
+[readmore]
+other = "Читать далее"
+
+[lastupdated]
+other = "Последнее обновление"
+
+[readingTime]
+one = "1 Минута"
+other = "{{.Count}} Минуты"
+
+[social]
+other = "Социальные сети"
+
+[site]
+other = "Сайт"
+
+[author]
+other = "Старый Кот"
+
+[translations]
+other="Выбрать другой язык"
+
+
+[description]
+other="Технологии, психология и искусство в мягких лапах времени"
+
+[themeby]
+other = "Тема"
+
+[madeby]
+other = "Сделано"
+
+[error404]
+other = "Нам очень жаль, но здесь, кажется, ничего нет."
+
+[gotohome]
+other = "Перейти на домашнюю страницу"
+
+# Taxonomoy title hack
+[Categories]
+other = "Категории"
+[Categorie]
+other = "Категория"
+[Tags]
+other = "Теги"
+[Tag]
+other = "Тег"
