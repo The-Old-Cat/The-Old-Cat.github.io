@@ -1,4 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
+# Пример рабочего процесса создания и развертывания сайта Hugo на GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
