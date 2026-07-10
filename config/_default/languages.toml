@@ -1,0 +1,15 @@
+[en]
+label = "English"
+title = "Hugo Theme Stack"
+weight = 1
+
+[en.params.sidebar]
+subtitle = "Card-style Hugo theme designed for bloggers"
+
+[ru]
+label = "Русский"
+title = "Hugo Тема Stack"
+weight = 2
+
+[ru.params.sidebar]
+subtitle = "Тема Hugo в карточном стиле, разработанная для блоггеров."

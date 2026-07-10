@@ -1,0 +1,32 @@
+mainSections = ["post"]
+rssFullContent = true
+favicon = "/images/AK.png"
+
+[footer]
+since = 2008
+
+[sidebar]
+emoji = "✏️"
+subtitle = "Технологии, психология и искусство в мягких лапах времени"
+avatar = "/images/AK.png"
+
+[article]
+[article.license]
+enabled = true
+default = "CC BY-NC-SA 4.0"
+
+[widgets]
+homepage = [
+    { type = "search" },
+    { type = "archives", params = { limit = 5 } },
+    { type = "categories", params = { limit = 10 } },
+    { type = "tag-cloud", params = { limit = 10 } },
+]
+page = [{ type = "toc" }]
+
+[cookies]
+enabled = false
+
+[cookies.categories]
+analytics = true
+functional = true

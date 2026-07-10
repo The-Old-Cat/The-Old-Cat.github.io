@@ -1,0 +1,16 @@
+# hugo.toml
+baseURL = 'https://lab.artkov-info.ru/'
+languageCode = 'ru-ru'
+title = 'Лаборатория Старого кота'
+theme = 'hugo-theme-stack'
+defaultContentLanguage = 'ru'
+
+[pagination]
+pagerSize = 6
+
+[permalinks]
+post = "/:year/:month/:slug/"
+page = "/:slug/"
+
+[services.disqus]
+shortname = "your-disqus-shortname" # Замени на свой реальный shortname
