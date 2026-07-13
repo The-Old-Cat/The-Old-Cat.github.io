@@ -1,6 +1,6 @@
 ---
-title: Documentation
-description: "Posts about how to use Stack theme"
+title: Документация
+description: "Сообщения о том, как использовать тему Stack"
 slug: "documentation"
 image: "hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg"
 style:

@@ -1,5 +1,5 @@
 ---
-title: Links
+title: Ссылки
 links:
   - title: GitHub
     description: GitHub is the world's largest software development platform.
@@ -10,7 +10,7 @@ links:
     website: https://www.typescriptlang.org
     image: ts-logo-128.jpg
 menu:
-    main: 
+    main:
         weight: -50
         params:
             icon: link
@@ -18,9 +18,9 @@ menu:
 comments: false
 ---
 
-To use this feature, add `links` section to frontmatter.
+Чтобы использовать эту функцию, добавьте раздел «Ссылки» во вкладку.
 
-This page's frontmatter:
+Заголовок этой страницы:
 
 ```yaml
 links:
@@ -34,4 +34,4 @@ links:
     image: ts-logo-128.jpg
 ```
 
-`image` field accepts both local and external images.
+`image` поле принимает как локальные, так и внешние изображения.

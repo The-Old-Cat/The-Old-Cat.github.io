@@ -1,7 +1,7 @@
 ---
 menu:
     main:
-        name: Home
+        name: Главная
         weight: -100
         params:
             icon: home
