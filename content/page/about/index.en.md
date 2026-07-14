@@ -15,7 +15,7 @@ menu:
 
 ---
 
-![My photo](about_img.png)
+![](about_img.png)
 
 **Hello, my name is Artem.**
 

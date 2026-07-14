@@ -11,7 +11,7 @@ menu:
 
 ------
 
-![About img](about_img.png)
+![](about_img.png)
 
 Привет, меня зовут Артём.
 
