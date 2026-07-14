@@ -1,15 +1,15 @@
 [en]
 label = "English"
-title = "Hugo Theme Stack"
+title = "Digital Garden & Workshop"
 weight = 1
 
 [en.params.sidebar]
-subtitle = "Card-style Hugo theme designed for bloggers"
+subtitle = "A place where thoughts find order"
 
 [ru]
 label = "Русский"
-title = "Hugo Тема Stack"
+title = "Цифровой сад и мастерская"
 weight = 2
 
 [ru.params.sidebar]
-subtitle = "Тема Hugo в карточном стиле, разработанная для блоггеров."
+subtitle = "Место, где мысли обретают порядок"

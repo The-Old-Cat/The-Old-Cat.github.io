@@ -2,11 +2,11 @@
 title: Ссылки
 links:
   - title: GitHub
-    description: GitHub is the world's largest software development platform.
+    description: GitHub — крупнейшая в мире платформа для разработки программного обеспечения.
     website: https://github.com
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
   - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+    description: TypeScript — это типизированная расширенная версия JavaScript, которая компилируется в простой JavaScript.
     website: https://www.typescriptlang.org
     image: ts-logo-128.jpg
 menu:
@@ -17,21 +17,3 @@ menu:
 
 comments: false
 ---
-
-Чтобы использовать эту функцию, добавьте раздел «Ссылки» во вкладку.
-
-Заголовок этой страницы:
-
-```yaml
-links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-```
-
-`image` поле принимает как локальные, так и внешние изображения.

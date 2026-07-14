@@ -15,12 +15,22 @@ menu:
 
 ---
 
-![My photo](/images/about_img.jpg)
+![My photo](about_img.png)
 
-The IT industry occupies an important place in my interests, and I try to highlight current trends and give practical advice. But my main goal is to explore the connection between technology and our inner selves, showing how it can enrich our lives.
+**Hello, my name is Artem.**
 
-Image processing is another area of my creativity. You can get acquainted with my work and find out what tools and methods I use to create unique visual solutions.
+Welcome to my digital garden and workshop.
 
-I also like to share my impressions of the books I've read. This section of the blog is dedicated to literature, which helps me find inspiration and gain a deeper understanding of the world around me.
+Here, I collect what truly works: battle-tested solutions, useful tools, and thoughts that help make better sense of the world and structure it more clearly.
 
-My blog is intended for those who seek peace in the midst of information noise, strive for new knowledge and want to discover sources of inspiration. Welcome to my digital garden!
+I write about:
+
+- **DevOps & Infrastructure** — automation, Linux, networking, and streamlined, reliable workflows.
+- **Image Processing & AI** — practical pipelines, effective prompts, and combining classic editors with generative models.
+- **Books & Reflection** — notes on what I've read and how good writing sharpens the mind.
+
+No fluff. Just honest observations, working code, and tidy solutions.
+
+All site source code and my configs are on [GitHub](https://github.com/The-Old-Cat).
+
+Glad to have you here.
