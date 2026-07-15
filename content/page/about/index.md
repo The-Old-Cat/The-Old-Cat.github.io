@@ -11,7 +11,7 @@ menu:
 
 ------
 
-![](about_img.png)
+![](about_img.webp)
 
 Привет, меня зовут Артём.
 

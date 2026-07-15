@@ -1,16 +1,34 @@
-# hugo.toml
 baseURL = 'https://lab.artkov-info.ru/'
-languageCode = 'ru-ru'
+languageCode = 'ru-RU'
 title = 'Цифровой сад и мастерская'
 theme = 'hugo-theme-stack'
 defaultContentLanguage = 'ru'
 
+# ==================== Изображения ====================
+[imaging]
+resampleFilter = "Lanczos"
+quality = 82
+anchor = "Smart"
+
+# ==================== Пагинация ====================
 [pagination]
 pagerSize = 6
 
+# ==================== Постоянные ссылки ====================
 [permalinks]
 post = "/:year/:month/:slug/"
 page = "/:slug/"
 
+# ==================== Disqus (если используешь) ====================
 [services.disqus]
-shortname = "your-disqus-shortname" # Замени на свой реальный shortname
+shortname = "your-disqus-shortname" # ← Замени на свой
+
+# ==================== Дополнительные полезные настройки ====================
+[markup.goldmark.renderer]
+unsafe = true # для рендеринга HTML в Markdown
+
+[markup.highlight]
+noClasses = false
+codeFences = true
+guessSyntax = true
+lineNos = true

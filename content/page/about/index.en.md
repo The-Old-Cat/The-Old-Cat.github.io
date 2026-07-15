@@ -15,7 +15,7 @@ menu:
 
 ---
 
-![](about_img.png)
+![](about_img.webp)
 
 **Hello, my name is Artem.**
 

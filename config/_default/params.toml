@@ -1,3 +1,4 @@
+# params.toml
 mainSections = ["post"]
 rssFullContent = true
 favicon = "/images/AK.png"
@@ -30,3 +31,21 @@ enabled = false
 [cookies.categories]
 analytics = true
 functional = true
+
+[imageProcessing]
+# Включаем автоматическую обработку
+cover = { enabled = true }
+content = { enabled = true }
+
+# Качество и форматы
+quality = 82
+format = "webp" # автоматически конвертировать в WebP
+resize = [
+    { width = 1200, height = 630, fit = "cover", suffix = "-og" },     # для Open Graph
+    { width = 800, height = 0, fit = "contain", suffix = "-preview" },
+    { width = 1600, height = 0, fit = "contain" },
+]
+
+# Дополнительные настройки
+anchor = "Smart"
+resampleFilter = "Lanczos"
