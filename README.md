@@ -55,6 +55,7 @@
 
 ```bash
 hugo new content post/nazvanie-zametki.md
+
 ```
 Не забудь проверить Front Matter в начале файла и установить `draft: false` перед публикацией.
 

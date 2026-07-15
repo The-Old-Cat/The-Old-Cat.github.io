@@ -1,8 +1,8 @@
 ---
 menu:
     main:
-        name: Главная
+        name: Посты
         weight: -100
         params:
-            icon: home
+            icon: messages
 ---

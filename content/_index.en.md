@@ -1,8 +1,8 @@
 ---
 menu:
     main:
-        name:  Home
+        name:  Posts
         weight: -100
         params:
-            icon: home
+            icon: messages
 ---
