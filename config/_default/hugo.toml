@@ -1,7 +1,7 @@
 # hugo.toml
 baseURL = 'https://lab.artkov-info.ru/'
 languageCode = 'ru-ru'
-title = 'Лаборатория Старого кота'
+title = 'Цифровой сад и мастерская'
 theme = 'hugo-theme-stack'
 defaultContentLanguage = 'ru'
 
