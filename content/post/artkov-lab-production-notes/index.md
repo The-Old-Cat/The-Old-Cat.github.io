@@ -1,6 +1,6 @@
 ---
 title: Artkov Lab Production Notes
-description: Этот сайт — моя публичная рабочая база знаний и цифровой сад.
+description: Заметки, конфиги и решения из реальной инфраструктуры.
 date: 2026-07-15
 slug: artkov-lab-production-notes
 image: welcome.webp

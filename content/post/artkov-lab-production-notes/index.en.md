@@ -1,6 +1,6 @@
 ---
 title: Artkov Lab Production Notes
-description: This site is my public working knowledge base and digital garden.
+description: Notes, configs and solutions from real infrastructure.
 date: 2026-07-15
 slug: artkov-lab-production-notes
 tags: [Digital Garden, Workflow, DevOps, Linux, Obsidian, MOC]
