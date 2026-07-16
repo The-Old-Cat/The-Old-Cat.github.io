@@ -1,5 +1,5 @@
 baseURL = 'https://lab.artkov-info.ru/'
-languageCode = 'ru-RU'
+locale = "ru-ru"
 title = 'Цифровой сад и мастерская'
 theme = 'hugo-theme-stack'
 defaultContentLanguage = 'ru'
@@ -20,8 +20,8 @@ post = "/:year/:month/:slug/"
 page = "/:slug/"
 
 # ==================== Disqus (если используешь) ====================
-[services.disqus]
-shortname = "your-disqus-shortname" # ← Замени на свой
+# [services.disqus]
+# shortname = "your-disqus-shortname" # ← Замени на свой
 
 # ==================== Дополнительные полезные настройки ====================
 [markup.goldmark.renderer]

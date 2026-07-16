@@ -9,6 +9,5 @@ icon = "brand-github"
 identifier = "twitter"
 name = "Twitter"
 url = "https://twitter.com"
-
 [social.params]
 icon = "brand-twitter"
