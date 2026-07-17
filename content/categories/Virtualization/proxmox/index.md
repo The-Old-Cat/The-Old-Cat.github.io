@@ -6,7 +6,7 @@ categories: virtualization
 draft: false
 ---
 
-# Proxmox VE 9: Что это и стоит ли переходить с ESXi
+# Proxmox VE 9: мой взгляд на альтернативу VMware
 
 > **📌 Тип заметки:** Инструкция / Обзор
 >
