@@ -19,6 +19,12 @@ pagerSize = 6
 post = "/:year/:month/:slug/"
 page = "/:slug/"
 
+# ==================== Категории ====================
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+
 # ==================== Disqus (если используешь) ====================
 # [services.disqus]
 # shortname = "your-disqus-shortname" # ← Замени на свой
@@ -32,3 +38,7 @@ noClasses = false
 codeFences = true
 guessSyntax = true
 lineNos = true
+
+[module]
+[[module.imports]]
+path = "github.com/KKKZOZ/hugo-admonitions"

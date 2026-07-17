@@ -1,8 +1,9 @@
 ---
 title: Artkov Lab Production Notes
-description: Notes, configs and solutions from real infrastructure.
+description: Notes, configs, and solutions from real-world infrastructure.
 date: 2026-07-15
 slug: artkov-lab-production-notes
+image: welcome.webp
 tags: [Digital Garden, Workflow, DevOps, Linux, Obsidian, MOC]
 menu:
     main:
@@ -14,57 +15,61 @@ menu:
 
 # Welcome
 
-This is my working knowledge base. Here you'll find configurations, checklists, config examples, and solutions to common tasks encountered in daily administration.
+This is my working knowledge base. It contains settings, checklists, configuration examples, and solutions to common tasks encountered in day-to-day system administration.
 
-No theory. Only what has been deployed, configured, and tested in production.
+Everything here has been battle-tested in production. No guesswork or unverified advice.
 
 ---
 
-### The Stack
+### Structure of Materials
 
-My tech stack is a classic infrastructure engineer's toolkit:
+The notes are organized using the digital garden principle — each topic is linked to others. Start with any area you need.
 
-| Area | What's Inside |
+**Main sections:**
+
+- [Virtualization](/categories/virtualization) — installation and configuration of hypervisors
+- [Operating Systems](/categories/os) — Linux and Windows Server
+- [Networking and Security](/categories/network) — routing, VPN, firewalls
+- [Monitoring](/categories/monitoring) — setting up observation systems
+- [Automation](/categories/automation) — scripts and configurations
+
+### Note Types
+
+I use several formats for convenience:
+
+| Type | Description |
 | :--- | :--- |
-| **Virtualization** | Hyper-V, VMware ESXi, Proxmox (installation, networking, LVM, RAID, device passthrough, backups) |
-| **Operating Systems** | Linux (Ubuntu/Debian), Windows Server (AD, GPO, PowerShell) |
-| **Networking** | MikroTik (routing, VPN, VLAN), OpenVPN, SSH, firewalls |
-| **Monitoring** | Zabbix, Netdata, Wazuh SIEM |
-| **Automation** | Python, PowerShell, Bash scripts, Git |
+| **Guide** | Step-by-step instructions for installation and configuration |
+| **Checklist** | A concise list of actions for quick deployment |
+| **Cheat Sheet** | Commands and syntax for quick reference |
+| **Troubleshooting** | Error description and how to fix it |
+
+### How to Use the Site
+
+1. **Search** — the fastest way to find the topic you need
+2. **Tag navigation** — grouping by technology
+3. **Related notes** — links to adjacent topics within the materials
 
 ---
 
-### How It's Organized
+### Who Might Find This Useful
 
-Everything is built on Obsidian. Notes are interconnected—if you see a link to another topic, click it for the details.
-
-Main types of content:
-- **Guides** — step-by-step instructions for installation and configuration.
-- **Checklists** — quick action lists for rapid deployment.
-- **Cheat sheets** — command and syntax quick references.
-- **Troubleshooting** — error descriptions and how to fix them.
-
----
-
-### Who Is This For
-
-- Sysadmins and DevOps engineers working with a similar stack.
-- Anyone working with virtualization platforms.
+- System administrators working with a similar stack.
+- Anyone using virtualization systems.
 - Those looking for concise, no-fluff instructions.
 
 ---
 
-### How to Use This Site
+### How to Use This
 
-The easiest way to navigate is via search. Just type a keyword to find what you need.
+The easiest way is to search. If you need a topic — just type a keyword.
 
-You can start from any section. The content isn't linear; pick whatever solves your current problem.
+You can start from any section. The materials are not arranged in a linear sequence — everyone decides what they need.
 
-If you spot an error or know a better way to do something, let me know. I'd appreciate the feedback.
+If a note helped you — great. If you spot an inaccuracy or know a more elegant solution — drop me a line, I'd be happy to discuss it.
 
 ---
 
-The site is a work in progress. Some materials are pulled directly from my daily notes, while others are polished for publication. If something is missing, it will likely show up later.
+The site is being updated gradually. Some materials come from my work notes, others have been specifically prepared for publication. If something is missing — it might appear later.
 
-Happy deploying.
-```
+Happy configuring.

@@ -1,19 +1,8 @@
 ---
 title: "Виртуализация"
-date: 2026-07-15
-tags: [virtualization, proxmox, vmware, hyper-v]
-categories: [virtualization]
+description: "Установка и настройка гипервизоров: Proxmox VE, VMware ESXi, Hyper-V"
+slug: "virtualization"
+style:
+  background: "#2a9d8f"
+  color: "#fff"
 ---
-
-# Виртуализация
-
-Здесь будет описание гипервизоров: Proxmox VE, VMware ESXi, Hyper-V.
-
-## Proxmox VE
-...
-
-## VMware ESXi
-...
-
-## Hyper-V
-...
