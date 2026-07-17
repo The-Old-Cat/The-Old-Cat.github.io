@@ -1,101 +1,103 @@
 ---
-title: "Proxmox VE 9. What It Is and Whether It's Worth Switching from ESXi"
+title: "Proxmox VE 9: What Is It and Is It Worth Switching from ESXi"
 date: 2026-07-16
-tags: [Proxmox, Virtualization, Linux, KVM, LXC, Ceph]
+tags: [Proxmox, Virtualization, Linux, KVM, LXC, Ceph, ESXi]
 categories: virtualization
 draft: false
 ---
 
-# Proxmox VE 9: My Take on a VMware Alternative
+# Proxmox VE 9: What Is It and Is It Worth Switching from ESXi
 
 > **📌 Note Type:** Guide / Overview
 >
 > **🗂️ Section:** [Virtualization](/categories/virtualization) | [Operating Systems](/categories/os)
 >
-> **🏷️ Tags:** #proxmox #virtualization #kvm #lxc #ceph
+> **🏷️ Tags:** #proxmox #virtualization #kvm #lxc #ceph #esxi
 
 ---
 
-### What Is Proxmox VE?
+### What is Proxmox VE?
 
-**Proxmox VE** is an open-source type-1 hypervisor platform that installs directly on bare metal. It combines two technologies in a single web interface:
+**Proxmox VE** is an open-source Type 1 hypervisor platform that installs directly on bare metal. It combines two virtualization technologies in one convenient web interface:
 
-- **KVM** — full-fledged virtual machines with hardware virtualization.
-- **LXC** — lightweight Linux containers.
+- **KVM** — Full-featured virtual machines with hardware virtualization.
+- **LXC** — Lightweight Linux containers.
 
-Plus built-in tools: clustering, High Availability, integrated backup with deduplication, Ceph for distributed storage, SDN, and much more.
-
-For me, this became a universal solution — I can run both heavy Windows services and lightweight containers in one environment.
+It also includes built-in functionality for clustering, High Availability, backups, Ceph, SDN, and much more.
 
 ---
 
-### Why I Started Considering Proxmox
+### Why I Started Considering a Switch from ESXi
 
-At work, the infrastructure runs on VMware ESXi — a classic stack, stable, everyone's used to it. But at home, I've been using Proxmox for my experiments and testing for a long time. At some point, I realized that Proxmox gives me the same capabilities as ESXi, but without licensing restrictions and with a more flexible ecosystem.
+My current infrastructure runs on the classic VMware ESXi stack, which has provided reliable stability. However, my experience with Proxmox in home labs and test environments has shown that the platform offers comparable functionality to ESXi while being free from strict licensing restrictions.
 
-The deciding factor wasn't that VMware became worse, but that Proxmox turned out to be more convenient in scenarios where there's no need to maintain a large vendor stack. I started looking at it as a full-fledged replacement — for projects where transparency and control matter.
+The deciding factor was not a decline in VMware as a product, but the clear advantages of Proxmox in scenarios that don’t require a massive vendor-supported stack. The switch is driven by the following reasons:
 
----
-
-### How I Approached the Comparison
-
-I wasn't looking for a "perfect" platform. I simply compared my work with ESXi to how the same tasks are solved in Proxmox.
-
-- **Deployment:** The ISO installs in 10 minutes, and the interface is immediately available. No extra steps.
-- **VM Management:** The web UI is faster and lighter than vSphere Client. The console works without unnecessary overlays.
-- **Backups:** ESXi requires a separate Veeam server. In Proxmox, everything is built-in, including deduplication and encryption.
-- **Containers:** LXC out of the box — this is what I always missed in VMware. I stopped spinning up separate VMs for small services.
-
-I realized that Proxmox covers all my use cases without unnecessary complexity.
+- **License Policy Optimization:** Changes in Broadcom’s licensing model have made the platform less attractive in the long term.
+- **Technological Independence:** Moving to Proxmox provides full transparency and control over the infrastructure without being tied to proprietary solutions.
+- **Ecosystem Flexibility:** The open nature of Proxmox allows building more flexible and manageable systems for projects where autonomy and ease of administration are important.
 
 ---
 
-### Scenarios I Tested
+### Real-World Testing in a Lab Environment
 
-I set up Proxmox in a test environment and ran through typical tasks I perform on ESXi:
+I deployed Proxmox VE 9 in a test environment and ran typical workloads I regularly handle on ESXi:
 
-1. **Running Windows Server + MSSQL** — stable, VirtIO delivers good disk and network performance.
-2. **Migrating running VMs** — live migration without shared storage works over the network, tolerably well.
-3. **Clustering** — set up two nodes, tested automatic VM restart when one node fails.
-4. **Storage** — combined local disks into ZFS with replication between nodes.
+1. **Running Windows Server + MSSQL**
+   Works stably. After installing VirtIO drivers, disk and network performance is good.
 
-All of this worked no worse than in the familiar stack.
+2. **Live Migration of a Running VM**
+   Without shared storage, migration occurs over the network. The results are acceptable.
 
----
+3. **Clustering**
+   Built a two-node cluster. Tested HA — when one node is shut down, VMs automatically restart on the second node.
 
-### What I Consider the Key Difference
+4. **Storage**
+   Used local disks with ZFS. For fully synchronous shared storage in the future, I plan to set up **Ceph**.
 
-Proxmox isn't just a hypervisor. It's a full-featured platform with storage, backups, clustering, and network logic all in one interface. And it runs on standard Debian, which gives me access to the familiar shell and all Linux packages.
-
-VMware, in my case, remains a good choice when you need to operate within its ecosystem — with full support, certifications, and standards. But when building infrastructure from scratch or modernizing an existing one, I now choose Proxmox as a more flexible and modern option.
-
----
-
-### What Challenges I Ran Into
-
-- **ZFS and memory.** If you enable deduplication, RAM consumption grows very quickly. I had to reconsider my approach and use compression instead.
-- **Networking.** The built-in SDN module is convenient, but it doesn't work quite the way I'm used to. I found it simpler to configure VLANs through standard Debian interfaces.
-- **Documentation.** Good, but written for ideal conditions. Real-world issues are often solved on the forum — and that's normal.
+5. **Backups**
+   Built-in `vzdump` + Proxmox Backup Server with deduplication and encryption. Significantly more convenient and cost-effective compared to Veeam.
 
 ---
 
-### Who I'd Recommend Proxmox To
+### Key Differences from ESXi
 
-- Those who want to move away from vendor lock-in.
-- Those building infrastructure from scratch and want to maintain control.
-- Those tired of complex licensing schemes.
-- Those who appreciate open-source tools and the community.
-
----
-
-### My Next Plans for Content
-
-I want to write a series of no-fluff notes on Proxmox based on what actually works:
-- Setting up a two-node cluster with replication.
-- Organizing backups with deduplication.
-- How I migrate existing VMs from ESXi to Proxmox.
-- LXC use cases for microservices.
+- **LXC containers out of the box** — something I always missed in VMware.
+- **Everything in one interface** — hypervisor, storage, backups, cluster, and networking.
+- **Open ecosystem** — the server runs on Debian, so you can install any packages and script freely.
+- **Flexibility** — easily scales from a small homelab to a full production cluster.
 
 ---
 
-*Everything written here comes from my practical experience. If you've tried something similar — I'd be happy to hear your thoughts.*
+### Challenges I Encountered
+
+- **ZFS and Memory** — enabling deduplication consumes a lot of RAM. I had to switch to compression instead.
+- **Networking** — the built-in SDN is powerful, but sometimes it’s simpler to configure VLANs using standard Debian tools.
+- **Support** — in serious production issues, you mostly rely on yourself and the community.
+
+---
+
+### Who I Recommend Switching to Proxmox
+
+**Yes, it’s worth it** if:
+- You want to escape vendor lock-in.
+- You’re building infrastructure from scratch or refreshing an existing one.
+- You need LXC containers and maximum flexibility.
+- Transparency and full control over the system are important to you.
+
+**Stay on VMware** if:
+- You have a large corporate environment with strict certification and vendor support requirements.
+
+---
+
+### My Immediate Plans
+
+I want to prepare a series of practical guides:
+- Setting up a 2–3 node cluster
+- Organizing reliable backups
+- Migrating VMs from ESXi to Proxmox (P2V)
+- Real-world production use cases for LXC
+
+---
+
+*Everything written here is based on personal hands-on experience. If you’re already using Proxmox or are planning to switch — I’d love to hear your thoughts in the comments.*
