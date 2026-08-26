@@ -5,6 +5,10 @@ on:
         branches: ["main"]
     workflow_dispatch:
 
+# Подавляет предупреждения депрекации, пока авторы экшенов не обновят манифесты
+env:
+    FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true
+
 permissions:
     contents: read
     pages: write
