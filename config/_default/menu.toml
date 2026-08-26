@@ -6,8 +6,8 @@ url = "https://github.com/The-Old-Cat"
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
+identifier = "telegramm"
+name = "Telegramm"
+url = "https://t.me/Art_Kovale"
 [social.params]
-icon = "brand-twitter"
+icon = "brand-tg"
