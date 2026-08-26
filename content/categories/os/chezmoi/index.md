@@ -7,6 +7,7 @@ slug: "chezmoi-dotfiles-management"
 categories:
   - DevOps
   - Infrastructure
+  - OS
 tags:
   - Linux
   - Windows
