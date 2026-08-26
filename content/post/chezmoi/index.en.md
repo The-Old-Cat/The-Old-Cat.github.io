@@ -4,12 +4,14 @@ description: "How to securely and conveniently synchronize user configuration fi
 date: 2026-02-25
 draft: false
 slug: "chezmoi-dotfiles-management"
+image: chezmoi-dotfiles-management-cover.webp
 categories:
   - DevOps
   - Infrastructure
   - OS
 tags:
   - Linux
+  - DevOps
   - Windows
   - Chezmoi
   - Git

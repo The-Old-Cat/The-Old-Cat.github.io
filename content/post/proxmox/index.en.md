@@ -2,6 +2,8 @@
 title: "Proxmox VE 9: What is it and is it worth switching from ESXi?"
 date: 2026-07-16
 tags: [Proxmox, Virtualization, DevOps, Linux, KVM, LXC, Ceph, ESXi]
+slug: proxmox-vs-esxi
+image: proxmox-vs-esxi-cover.webp
 categories:
     - Virtualization
     - DevOps

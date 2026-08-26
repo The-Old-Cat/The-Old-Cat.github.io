@@ -4,13 +4,15 @@ description: "Как безопасно и удобно синхронизиро
 date: 2026-02-25
 draft: false
 slug: "chezmoi-dotfiles-management"
+image: chezmoi-dotfiles-management-cover.webp
 categories:
   - DevOps
-  - Infrastructure
-  - OS
+  - Инфраструктура
+  - Операционные системы
 tags:
   - Linux
   - Windows
+  - DevOps
   - Chezmoi
   - Git
   - CLI

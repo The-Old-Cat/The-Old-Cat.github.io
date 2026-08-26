@@ -1,6 +1,10 @@
 ---
 title: "Обо мне"
 date: 2026-07-15
+aliases:
+  - "/about-us/"
+  - "/about-me/"
+  - "/contact/"
 tags: [about, sysadmin, devops, infrastructure, obsidian]
 layout: page
 menu:

@@ -4,7 +4,7 @@ description: "My name is Tom, nicknamed the Old Cat, and this blog is my cozy sp
 date: 2024-12-28
 aliases:
   - "/about-us/"
-  - "/about-hugo/"
+  - "/about-me/"
   - "/contact/"
 author: "Old Cat"
 menu:
