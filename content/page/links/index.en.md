@@ -20,6 +20,11 @@ links:
     image: https://raw.githubusercontent.com/twbs/icons/main/icons/terminal-fill.svg
 
   # --- Technologies & Utilities ---
+  - title: Scoop
+    description: A command-line installer/package manager for Windows.
+    website: https://scoop.sh
+    image: scoop-logo.jpg
+
   - title: Chezmoi
     description: Dotfile manager for secure setting management across Linux and Windows.
     website: https://www.chezmoi.io

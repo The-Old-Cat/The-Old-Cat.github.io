@@ -20,6 +20,11 @@ links:
     image: https://raw.githubusercontent.com/twbs/icons/main/icons/terminal-fill.svg
 
   # --- Технологии и утилиты ---
+  - title: Scoop
+    description: Удобный менеджер пакетов командной строки для Windows.
+    website: https://scoop.sh
+    image: scoop-logo.jpg
+
   - title: Chezmoi
     description: Менеджер dot-файлов для безопасного управления настройками в Linux и Windows.
     website: https://www.chezmoi.io
